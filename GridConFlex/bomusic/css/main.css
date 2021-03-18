@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --white: #f2f2f2;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 60px 300px auto auto;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards div{
+    display: flex;
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: var(--white);
+    box-shadow:  -10px -10px 20px rgba(0, 0, 0, 0.25),
+                  10px 10px 20px rgba(0, 0, 0, 0.25);
+}

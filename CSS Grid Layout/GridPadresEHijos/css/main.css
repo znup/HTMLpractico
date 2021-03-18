@@ -1,0 +1,23 @@
+
+
+body{
+    margin: 0;
+}
+
+.child {
+    background: rgb(250, 197, 250);
+}
+
+.hijo-padre {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    background: rgb(248, 103, 248);;
+}
+
+.padre {
+    display: grid;
+    width: 100%;
+    height: 100px;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    background-color: rgb(253, 0, 253);;
+}
