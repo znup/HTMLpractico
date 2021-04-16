@@ -25,14 +25,143 @@ html {
     align-items: center;
 }
 
+header h1 {
+    font-size: 3rem;
+    margin: 5rem 0 5rem 0;
+    padding: 30px 0 0 0;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    overflow: scroll;
+    overflow-x: initial;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.cards::-webkit-scrollbar {
+    display: none;
+}
+
 .cards div{
     display: flex;
+    scroll-snap-align: center;
     width: 250px;
     height: 250px;
+    margin: 4rem 0 0 0;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
     background-color: var(--white);
     box-shadow:  -10px -10px 20px rgba(0, 0, 0, 0.25),
                   10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.song {
+    width: 100%;
+}
+
+.song--name {
+    margin: 20px;
+    margin-top: 3rem;
+    place-content: center;
+    font-size: 4rem;
+    text-align: center;
+    color: #2C2C2C;
+    /* text-shadow: 1px 1px #b2b2b2, 1.2px 1.2px #222; */
+}
+
+.progress-bar {
+    display: flex;
+    grid-template-columns: repeat(2, 20px) 1fr repeat(2, 20px);
+    grid-template-rows: 10px 1fr;
+    align-items: flex-start;
+    justify-content: center;
+    margin: .3rem 0 0 0;
+}
+
+.progress-bar .start {
+    margin: 4rem 0 0 7rem;
+}
+
+.progress-bar .end {
+    margin: 4rem 7rem 0 0;
+}
+
+.progress-bar .bar {
+    width: 60%;
+    min-width: 45%;
+    height: 10px;
+    grid-column: 3;
+    position: relative;
+    clip-path: polygon(82% 10% 16% 10%);
+    border-radius: 20px;
+    background: linear-gradient(to right, #bcbcbc 50%,#2C2C2C 51%, #2C2C2C 100%);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.progress-bar .bar .dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 49%;
+    top: -5px;
+    border-radius: 50%;
+    background-color: #222;
+    clip-path: circle(100%);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto 20px auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttons div:not(.play) {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+    background: var(--white);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .25);
+    cursor: pointer;
+}
+
+.buttons div i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.repeat {
+
+}
+
+.prev {
+
+}
+
+.play {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--white);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .25);
+}
+
+.next {
+
+}
+
+.stop {
+
 }

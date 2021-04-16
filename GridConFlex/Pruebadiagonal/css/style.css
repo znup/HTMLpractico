@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+ .sesgar {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.uno {
+    background: coral;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*
+.sesgo1 {
+    position: absolute;
+    /* background: #000; */
+    /* bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    box-shadow: rgba(0, 0, 0, 1);
+    border-color: transparent transparent yellow transparent;
+} */ 
+
+.fondo {
+    width: 45%!important;
+    height: 130px;
+    border-radius: 25px 25px 25px 25px;
+    background-color: rgb(254, 254, 254,  .86);
+    box-shadow: -5px 5px 10px rgba(4, 25, 86,.30);
+    padding: 0;
+}
+
+.el {
+    display: inline-block;
+    margin: -30px 0 0 -5px;
+    font-size: 40px;
+    color: #2c2e2e;
+}
+.complemento, .para {
+    display: inline-block;
+    margin: -30px 0 0 10px;
+    font-size: 40px;
+    color: #2c2e2e;
+}
+
+.mejor {
+    display: inline-block;
+    margin: 0;
+    font-size: 40px;
+    font-style: italic;
+    color: #983371;
+}
+
+.hijos {
+    display: inline-block;
+    margin: 0;
+    font-size: 40px;
+    font-style: italic;
+    color: #4859c5;
+}
+.dos {
+    background-color: cornflowerblue;
+}
+
+.question {
+    display: inline-flex;
+    font-family: kiss boom;
+    font-size: 140px;
+    color: #f2f2f2;
+}
+
+.que {
+    display: inline-flex;
+    font-size: 56px;
+    color: #2c2e2e;
+}
+
+.vitalica {
+    display: inline-flex;
+    font-size: 56px;
+    color: #2c2e2e;
+}
+
+.kids {
+    display: inline-flex;
+    font-size: 56px;
+    color: #4859c5;
+}
