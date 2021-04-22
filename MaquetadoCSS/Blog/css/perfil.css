@@ -1,0 +1,143 @@
+
+body {
+    font-family: initial;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+
+.grid-container {
+    max-width: 980px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+
+.main-container-icons .icons {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    order: 2;
+    margin: 30vh 10vh 0 0;
+    z-index: 2;
+}
+
+section .icons span {
+    color: black;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+
+.nav-logo-container {
+    margin: 0 0 0 50px;
+}
+
+nav .nav-logo-container img {
+    width: 220px;
+    margin: 10px 0 0 0;
+}
+
+nav .profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px 0 0;
+}
+
+nav .profile-link a {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.profile-main {
+    display: grid;
+}
+
+.profile-projects-container {
+    background-color: #e6e9ed;
+    padding: 40px 50px 40px;
+}
+
+.profile-main-project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+}
+
+.profile-projects-img-container {
+    grid-column: 1;
+}
+
+.profile-projects-img-container img {
+    width: 85%;
+}
+
+.profile-projects-info-container {
+    grid-column: 2;
+}
+
+.profile-projects-info-container p {
+    margin-bottom: 35px;
+}
+
+.profile-posts-container {
+    padding: 0 50px 40px;
+}
+
+.profile-posts-container h3 {
+    border-bottom: 1px solid #cdd2da;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.profile-button {
+    border: 1px solid #ceacaa;
+    padding: 10px 15px;
+    font-size: 12px;
+}
+
+.profile-posts-container .post-container {
+    display: inline-block;
+    padding-left: 10px;
+    max-width: 30%;
+    margin-bottom: 50px;
+}
+
+.profile-posts-container .post-container p {
+    margin-bottom: 35px;
+}
+
+.profile-posts-container .post-container img {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #22272d;
+    border-top: 35px solid #ceacaa;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    margin-top: 30px;
+}
