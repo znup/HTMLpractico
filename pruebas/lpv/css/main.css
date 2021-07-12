@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    margin: auto;
+}
+.background-main {
+    width: 100%;
+    height: 71vh;
+    background-image: url("../assets/img/Fondo.jpg");
+}
+
+div .background-logo-main {
+    display: inline-block;
+    padding: 5% 20% 0 5%;
+}
+
+div {
+    display: inline-block;
+}
+ div .product-main img {
+    display: inline-block;
+}
+
+.background-main-vitality {
+    color: #582D40;
+    font-size: 3rem;
+    
+}
+
+.background-main-days {
+    color: black;
+    font-size: 1.4rem;
+}
+
+.background-button-main {
+    width: 123px;
+    height: 36px;
+    font-size: 1.2rem;
+    background-color: #582D40;
+    border-radius: 10px;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    text-align: center;
+}
+
+
+
+/* seccion 3 Cards*/
+.flip-card {
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.front-title {
+  position: absolute;
+  padding-bottom: 32vh;
+  margin-bottom: 40px;
+  border-left: 2px solid white;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-style: none;
+  color: white;
+}
+
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front {
+  background-color: #582D40;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #582D40;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+.flip-card-front:before {
+    content:'';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(88, 45, 64, .7);
+}
+/* fin seccion 3 cards */
+
+
+footer p {
+    padding-top: 30px;
+    color: #bcbcbc;
+}
+
+footer a {
+    color: #E6007C;
+}
+
+
+
+/* inicio prueba */
+.flip-container {
+    display: inline-block;
+}
+
+
+.flip-card2 {
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card2:hover .flip-card-inner2 {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front2, .flip-card-back2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front2 {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back2 {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+/* fin prueba */

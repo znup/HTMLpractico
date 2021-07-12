@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclases</title>
+</head>
+<style>
+    /* n hace referencia a numeros th a los numeros ordinarios */
+    p:nth-child(2n) {
+        color: red;
+    }
+    p:nth-child(2n-1) {
+        color: blue;
+    }
+    p::second-letter {
+        color: brown;
+    }
+
+</style>
+<body>
+    <p>🐻Oso</p>
+    <p>🐷Cerdini</p>
+    <p>🐨Koala</p>
+    <p>🐯Tigre</p>
+    <p>🐗Jabalí</p>
+</body>
+</html>

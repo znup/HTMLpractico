@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container:hover .circle{
+            transform: translateX(200px);
+        }
+        .circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .one {
+            background: linear-gradient( 113.3deg,  rgba(217,9,27,1) 6.9%, rgba(22,68,150,1) 75% );
+            transition: transform 1s line;
+            transition-delay: .5s;
+        }
+        .two {
+            background: linear-gradient( 113.3deg,  rgba(217,9,27,1) 6.9%, rgba(22,68,150,1) 75% );
+            transition: transform .1s ease;
+            transition-delay: .5s;
+        }
+        .three {
+            background: violet;
+            transition: transform 1.5s ease-in;
+            transition-delay: .5s;
+        }
+        .four {
+            background: purple;
+            transition: transform 10s ease-out;
+            transition-delay: .5s;
+        }
+        .five {
+            background: powderblue;
+            transition: transform 1s ease-in-out;
+            transition-delay: .5s;
+        }
+        .six {
+            background: palegreen;
+            transition: transform 1s step-end;
+            transition-delay: .5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle one"></div>
+        <div class="circle two"></div>
+        <div class="circle three"></div>
+        <div class="circle four"></div>
+        <div class="circle five"></div>
+        <div class="circle six"></div>
+    </div>
+</body>
+</html>

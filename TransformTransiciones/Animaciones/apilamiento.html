@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            width: 100%;
+            margin: 0;
+            counter-reset: score;
+        }
+        input[type=checkbox] {
+            position: relative;
+            width: 80px;
+            height: 50px;
+            margin: 0;
+            top: 0;
+            appearance: none;
+            cursor: pointer;
+        }
+        input[type=checkbox]:focus {
+            appearance: none;
+            outline: none;
+        }
+        input:checked {
+            counter-increment: score;
+        }
+        .score {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* display: grid;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            place-items: center; */
+        }
+        .score::after {
+        content: counter(score);
+    }
+
+        .phone {
+            position: relative;
+            border: 8px solid #707070;
+            border-radius: 30px;
+            height: 550px;
+            width: 300px;
+            background: #ccefff;
+            box-shadow: 0 19px 38px rgba(0, 0, 0, .5);
+            overflow: hidden;
+        }
+
+        /* bunny 1 */
+        .layer1 {
+            position: absolute;
+            height: 450px;
+            width: 80px;
+            /* background: white; */
+            border: 1px solid black;
+            bottom: 0;
+            right: 60px;
+            animation: bunnys 1s ease-in-out infinite;
+        }
+       /* .layer1 input[type=checkbox] {
+
+       }  */
+
+        @keyframes bunnys {
+            0% {
+                bottom: 0;
+            }
+            30% {
+                bottom: -100px;
+            }
+            100% {
+                bottom: 0;
+            }
+        }
+        .left-ear-outer {
+            position: absolute;
+            background: white;
+            border-radius: 90%;
+            width: 20px;
+            height: 50px;
+            left: 10px;
+        }
+
+        .left-ear-inner {
+            position: absolute;
+            background: pink;
+            border-radius: 90%;
+            width: 10px;
+            height: 50px;
+            left: 15px;
+            top: 5px;
+        }
+
+        /* oreja derecha */
+        .right-ear-outer {
+            position: absolute;
+            background: white;
+            border-radius: 90%;
+            width: 20px;
+            height: 50px;
+            right: 10px;
+        }
+
+        .right-ear-inner {
+            position: absolute;
+            background: pink;
+            border-radius: 90%;
+            width: 10px;
+            height: 50px;
+            right: 15px;
+            top: 5px;
+        }
+
+        .head {
+            position: absolute;
+            width: 100%;
+            height: 90px;
+            left: 0;
+            right: 0;
+            top: 30px;
+            margin: 0 auto;
+            border-radius: 40%;
+            background: white;
+        }
+
+        .head-eye {
+            position: absolute;
+            width: 15%;
+            height: 10px;
+            background: turquoise;
+            border-radius: 50%;
+            top: 10px;
+            animation: blink 2s infinite;
+        }
+        @keyframes blink {
+            0% {
+                height: 10px;
+            }
+
+            5% {
+                transform: translate(0px, 2px);
+                height: 5px;
+            }
+            10% {
+                transform: translate(0px, 0px);
+                height: 10px;
+            }
+        }
+
+        .head-eye-left {
+            left: 20px;
+        }
+
+        .head-eye-right {
+            right: 20px;
+        }
+
+        /* end bunny 1*/
+        .layer2 {
+            position: absolute;
+            height: 450px;
+            width: 80px;
+            /* background: white; */
+            border: 1px solid black;
+            bottom: 0;
+            left: 60px;
+            animation: bunnys 200ms ease-in infinite;
+        }
+/* torre 1 */
+        /* Relief */
+        .layer3 {
+            position: absolute;
+            height: 400px;
+            width: 220px;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            border-radius: 20px;
+            background: #cb8665;
+        }
+
+        .relief:after {
+            content: "";
+            width: 100%;
+            height: 20px;
+            position: absolute;
+            top: 0;
+            height: 30px;
+            background: linear-gradient(135deg, #67A167 25%, transparent 25%) -50px 0,
+                linear-gradient(-135deg, #67A167 25%, transparent 25%) -50px 0,
+                linear-gradient(45deg, #67A167 25%, transparent 25%),
+                linear-gradient(-45deg, #67A167 25%, transparent 25%);
+            background-size: 30px 80px;
+            border-radius: 20px;
+        }
+
+        .relief::before {
+            content: "";
+            position: absolute;
+            /* left: -0px; */
+            top: 15px;
+            width: 100%;
+            height: 40px;
+            background: linear-gradient(135deg, #a6543d 25%, transparent 25%) -50px 0,
+                linear-gradient(-135deg, #a6543d 25%, transparent 25%) -50px 0,
+                linear-gradient(50deg, #a6543d 25%, transparent 25%),
+                linear-gradient(-50deg, #a6543d 25%, transparent 25%);
+            background-size: 30px 70px;
+            background-position: 140px 0 0 30px 0;
+        }
+
+        /* Bunny 3 */
+        .layer4 {
+            position: absolute;
+            height: 330px;
+            width: 80px;
+            /* background: white; */
+            border: 1px solid black;
+            bottom: 0;
+            left: 20px;
+            animation: bunnys 2s  infinite;
+        }
+        .layer4 input[type=checkbox] {
+            position: relative;
+            width: 80px;
+            height: 50px;
+            margin: 0;
+            top: 0;
+            appearance: none;
+            cursor: pointer;
+        }
+/* Torre 2 */
+        .layer5 {
+            position: absolute;
+            height: 280px;
+            width: 180px;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            border-radius: 20px;
+            background: #cb8665;
+            box-shadow: 10px 20px 12px rgba(0, 0, 0, .5);
+        }
+
+        /* bunny 4 */
+        .layer6 {
+            position: absolute;
+            height: 230px;
+            width: 60px;
+            /* background: white; */
+            border: 1px solid black;
+            bottom: 0;
+            right: 40px;
+            animation: bunnys 800ms ease-in-out infinite;
+        }
+        /* .layer6 input[type=checkbox] {
+
+        } */
+/* Torre 3 */
+        .layer7 {
+            position: absolute;
+            height: 180px;
+            width: 160px;
+            bottom: 0;
+            right: 0;
+            border-radius: 20px;
+            background: #cb8665;
+            box-shadow: -1px 20px 12px rgba(0, 0, 0, .5);
+        }
+
+        /* Arbol */
+        .layer8 {
+            position: absolute;
+            height: 90px;
+            width: 180px;
+            /* background: green; */
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+        }
+
+        .layer8::before {
+            position: absolute;
+            content: "";
+            width: 55%;
+            height: 80%;
+            bottom: 0;
+            left: 0;
+            background: green;
+            border-radius: 100px 100px 10px 20px;
+        }
+
+        .layer8::after {
+            position: absolute;
+            content: "";
+            width: 50%;
+            height: 80%;
+            bottom: 0;
+            right: 0;
+            background: green;
+            border-radius: 100px 100px 10px 20px;
+        }
+
+        .tree {
+            position: absolute;
+            width: 50%;
+            height: 95%;
+            bottom: 0;
+            left: 30%;
+            background: green;
+            border-radius: 100px 100px 10px 20px;
+            box-shadow: 10px 20px 12px rgba(0, 0, 0, .5);
+            overflow: hidden;
+        }
+
+        /* Nubes */
+        .layer9 {
+            position: absolute;
+            height: 80px;
+            width: 100px;
+            /* background: whitesmoke; */
+            border: 1px solid black;
+            bottom: 0;
+            left: 0;
+        }
+
+        .layer9::before {
+            position: absolute;
+            content: "";
+            width: 85%;
+            height: 100%;
+            background: white;
+            border-radius: 100px 100px 10px 20px;
+            z-index: 9;
+        }
+
+        .layer9::after {
+            position: absolute;
+            content: "";
+            width: 80%;
+            height: 60%;
+            bottom: 0;
+            right: 0;
+            background: white;
+            border-radius: 100px;
+            box-shadow: 10px 20px 12px rgba(0, 0, 0, .5);
+        }
+
+
+        .layer10 {
+            position: absolute;
+            height: 80px;
+            width: 100px;
+            /* background: whitesmoke; */
+            border: 1px solid black;
+            bottom: 0;
+            right: 0;
+        }
+
+        .layer10::before {
+            position: absolute;
+            content: "";
+            width: 85%;
+            height: 100%;
+            right: 0;
+            background: white;
+            border-radius: 100px 100px 10px 20px;
+            z-index: 10;
+        }
+
+        .layer10::after {
+            position: absolute;
+            content: "";
+            width: 60%;
+            height: 60%;
+            bottom: 0;
+            left: 0;
+            background: white;
+            border-radius: 100px;
+            box-shadow: -1px 20px 12px rgba(0, 0, 0, .5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="phone">
+        <div class="layer1">
+            <input type="checkbox">
+            <!-- bunny 1-->
+            <div class="left-ear-outer"></div>
+            <div class="left-ear-inner"></div>
+            <div class="right-ear-outer"></div>
+            <div class="right-ear-inner"></div>
+            <div class="head">
+                <div class="head-eye head-eye-left"></div>
+                <div class="head-eye head-eye-right"></div>
+            </div>
+        </div>
+        <!-- bunny 2 -->
+        <div class="layer2">
+            <input type="checkbox">
+            <div class="left-ear-outer"></div>
+            <div class="left-ear-inner"></div>
+            <div class="right-ear-outer"></div>
+            <div class="right-ear-inner"></div>
+            <div class="head">
+                <div class="head-eye head-eye-left"></div>
+                <div class="head-eye head-eye-right"></div>
+            </div>
+        </div>
+        <!-- Torre 1 -->
+        <div class="layer3">
+            <div class="relief"></div>
+        </div>
+        <!-- bunny 3 -->
+        <div class="layer4">
+            <input type="checkbox">
+            <div class="left-ear-outer"></div>
+            <div class="left-ear-inner"></div>
+            <div class="right-ear-outer"></div>
+            <div class="right-ear-inner"></div>
+            <div class="head">
+                <div class="head-eye head-eye-left"></div>
+                <div class="head-eye head-eye-right"></div>
+            </div>
+        </div>
+        <!-- Torre 2 -->
+        <div class="layer5">
+            <div class="relief"></div>
+        </div>
+        <!-- bunny 4 -->
+        <div class="layer6">
+            <input type="checkbox">
+            <div class="left-ear-outer"></div>
+            <div class="left-ear-inner"></div>
+            <div class="right-ear-outer"></div>
+            <div class="right-ear-inner"></div>
+            <div class="head">
+                <div class="head-eye head-eye-left"></div>
+                <div class="head-eye head-eye-right"></div>
+            </div>
+        </div>
+        <!-- Torre 2 -->
+        <div class="layer7">
+            <div class="relief"></div>
+        </div>
+        <!-- Arbul -->
+        <div class="layer8">
+            <div class="tree"></div>
+        </div>
+        <!-- Nube izquierda -->
+        <div class="layer9"></div>
+        <!-- nube derecha -->
+        <div class="layer10"></div>
+
+        <h3 class="score">Score: </h3>
+    </div>
+</body>
+
+</html>

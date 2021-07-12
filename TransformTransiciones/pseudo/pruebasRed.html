@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PruebaRed</title>
+</head>
+<body>
+    
+
+<!--<div class="container-section4 cards">-->
+  
+    <div class="container-movil">
+
+        <!--<div class="container-panel">-->
+            <div class="panel-movil active-movil" style="background-image: url('http://redntense.suplementosinfo.com/wp-content/uploads/2021/06/Ginseng_03.jpg');" >
+                <div class="container-icono-movil">
+                    <div class="icono-img-movil">
+                        <img src="http://redntense.suplementosinfo.com/wp-content/uploads/2021/06/IconoGinsen.png">
+                    </div>
+                    
+                    <h3 class="panel-movil title-vertical-movil">Ginseng</h3>
+                    
+                </div>
+                <div class="txt-info-movil">
+                    <h2 class="title-normal-movil">Ginseng</h2>
+                    <p class="title-context-movil">Vigorizante que ayuda a combatir el estrés y cansancio reduciendo así la fatiga física y mental.
+                    </p>
+                </div>
+            </div>
+        
+        
+        
+        <!--</div> final contenedor panel-->
+<!--Segunda img-->
+
+<!--<div class="container-panel">  iniicio contenedor panel-->
+                <div class="panel-movil" style="background-image: url('http://redntense.suplementosinfo.com/wp-content/uploads/2021/06/Omega3_03.jpg');background-position:center;" >
+                    <div class="container-icono-movil">
+                    <div class="icono-img-movil">
+                        <img src="http://redntense.suplementosinfo.com/wp-content/uploads/2021/06/IconoOmega3.png">
+                    </div>
+                    <!--<div class="title-content-sec4">-->
+                    <h3 class="panel-movil title-vertical-movil">Omega 3</h3>
+                    <!--</div>-->
+                </div>
+                <div class="txt-info-movil">
+                    <h2 class="title-normal-movil">Omega 3</h2>
+                    <p class="title-context-movil">Mejora la fuerza, rendimiento físico y
+reduce los tiempos de recuperación muscular.
+                    </p>
+                </div>
+            </div>
+    <!--</div>     final contenedor panel-->
+        
+</div>
+
+<script>
+    const panelsM1 = document.querySelectorAll( '.panel-movil' );
+
+    panelsM1.forEach( (panelM1) => {
+
+    panelM1.addEventListener('click', () => {
+        removeActiveClassesM1();
+        panelM1.classList.add('active-movil');
+    } );
+} );
+
+function removeActiveClassesM1(){
+    panelsM1.forEach( panelM1 => {
+        panelM1.classList.remove('active-movil');
+    } )
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+cd Scripts
+python lectura_de_archivos.py

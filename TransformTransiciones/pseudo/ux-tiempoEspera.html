@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        ul {
+            list-style: none;
+            color: #fff;
+        }
+        a {
+            text-decoration: none;
+            margin: 10px;
+        }
+        .nav {
+            display: flex;
+            background: #f7f7f7;
+            margin: 20px;
+            width: 100%;
+            height: 80px;
+            align-items: center;
+        }
+        .nav li ul{
+            background: #707070;
+            display: block;
+            opacity: 0;
+            position: absolute;
+            transition: opacity 500ms;
+            transition-delay: 400ms;
+        }
+        .nav li:hover > ul {
+            opacity: 1;
+            transition: opacity 500ms;
+            transition-delay: 400ms;
+            color: #fff;
+        }
+        .nav li ul li {
+            position: relative;
+        }
+        .nav li ul li {
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="/">Mujer</a>
+            <ul>
+                <li><a href="/">Camisetas</a></li>
+                <li><a href="/">Camisetas</a></li>
+                <li><a href="/">Shorts</a>
+                    <ul>
+                        <li><a href="/">Cortos</a></li>
+                        <li><a href="/">Medianos</a></li>
+                        <li><a href="/">Largos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="/">Hombre</a>
+            <ul>
+                <li><a href="/">Camisetas</a></li>
+                <li><a href="/">Camisetas</a></li>
+                <li><a href="/">Shorts</a>
+                    <ul>
+                        <li><a href="/">Cortos</a></li>
+                        <li><a href="/">Medianos</a></li>
+                        <li><a href="/">Largos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="/">Niños</a>
+            <ul>
+                <li><a href="/">Camisetas</a></li>
+                <li><a href="/">Camisetas</a></li>
+                <li><a href="/">Shorts</a>
+                    <ul>
+                        <li><a href="/">Cortos</a></li>
+                        <li><a href="/">Medianos</a></li>
+                        <li><a href="/">Largos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,40 @@
+
+/* 
+    1.- posicionamiento (relative, position)
+    2.- modelo de caja (margin, padding width)
+    3.- tipografia
+    4.- visuales
+    5.- miscelanius / otros
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: monospace;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 55px;
+    background-color: skyblue;
+}
+
+.main-header nav h1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px 0 0 50px;
+    font-size: 4rem;
+}
+.nav-menu-account {
+    display: grid;
+    grid-column: 2/2;
+}
